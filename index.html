@@ -1,1 +1,221 @@
+<!DOCTYPE html>
+<html>
 
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <style>
+        body,
+        html {
+            height: 100%;
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        
+        * {
+            box-sizing: border-box;
+        }
+        
+        .bg-image {
+            background-image: url("https://www.vhm.fr/themes/custom/vhmgroupe/public/images/actualites.jpg");
+            filter: blur(2px);
+            -webkit-filter: blur(2px);
+            height: 60vh;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        
+        .bg-text {
+            background-color: rgb(0, 0, 0);
+            /* Fallback color */
+            background-color: rgba(0, 0, 0, 0.4);
+            /* Black w/opacity/see-through */
+            color: white;
+            font-weight: bold;
+            border: 3px solid #f1f1f1;
+            position: absolute;
+            top: 30%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            z-index: 2;
+            width: 80%;
+            padding: 20px;
+            text-align: center;
+        }
+        
+        p.lead {
+            text-align: justify;
+            text-justify: inter-word;
+        }
+        
+        .card {
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+            max-width: 300px;
+            margin: auto;
+            text-align: center;
+            font-family: arial;
+        }
+        
+        .title {
+            color: grey;
+            font-size: 18px;
+        }
+        
+        button {
+            border: none;
+            outline: 0;
+            display: inline-block;
+            padding: 8px;
+            color: white;
+            background-color: #004185;
+            text-align: center;
+            cursor: pointer;
+            width: 100%;
+            font-size: 18px;
+        }
+        
+        a {
+            text-decoration: none;
+            font-size: 22px;
+            color: #004185;
+            ;
+        }
+        
+        button:hover,
+        a:hover {
+            opacity: 0.7;
+        }
+        
+        #sticky-footer {
+            flex-shrink: none;
+        }
+    </style>
+    <title>Google Drive</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+
+    <div class="bg-image"></div>
+
+    <div class="bg-text">
+        <h1 style="font-size:30px">
+           Google Drive : enfin une option d’identification pour protéger ses fichiers… mais juste sur iPhone et iPad
+        </h1>
+    </div>
+
+    <main class="container mt-4">
+        <div class="row">
+            <div class="col-md-9">
+              <p class="lead mt-1">
+              Une mise à jour pour Google Drive sur iOS et iPadOS permet enfin de protéger l’application par l'intermédiaire de Face ID ou Touch ID. Pour Android, il faudra visiblement encore attendre un peu.
+              </p>
+              <div class="mt-1 mb-2">
+                    <img src="https://images.frandroid.com/wp-content/uploads/2020/05/face-id-google-drive-1200x1031.jpg" class="img-fluid" alt="Image">
+              </div>
+                <p>
+                  Si <strong>Google Drive</strong> est installé sur votre iPhone ou votre iPad, vous devriez avoir reçu une mise à jour de l’application. Celle-ci affiche un nouveau sous-menu dans les paramètres de l’application, intitulé « Écran Confidentialité ». Celui-ci permet de protéger Google Drive par l’intermédiaire de Face ID ou Touch ID et un mot de passe, à chaque fois ouverture de l’application.
+              </p>
+                <div class="mt-1 mb-2">
+                    <img src="https://images.frandroid.com/wp-content/uploads/2020/05/google-drive-face-id.gif" class="img-fluid" alt="Image">
+              </div>
+              <p>
+              L’utilité d’une telle option est évidente : vous n’avez pas forcément envie que quelqu’un regarde ce que contiennent vos dossiers et fichiers hébergés sur Google Drive. Google a d’ailleurs poussé le vice jusqu’à forcer l’identification à chaque fois que vous changez d’application. Un paramètre qu’il est possible de modifier pour le retarder de 10 secondes, une minute ou 10 minutes afin de rendre le passage d’une application à une autre moins contraignant.
+              </p>
+                <p class="mb-2">
+              Google indique toutefois que l’activation de Face ID ou Touch ID ne protège pas tous les éléments présents sur Google Drive. En fait les fichiers et photos présents dans les notifications, partagés avec certaines fonctionnalités de Siri ou avec l’application Fichiers peuvent encore apparaître à l’écran.
+              </p>
+              <h2>ET SUR ANDROID ALORS ?</h2>
+              <p>
+              Cette fonctionnalité est pour l’instant exclusive aux iPhone et aux iPad. Il n’est pas rare que Google sorte des fonctionnalités intéressantes d’abord sur iPhone puis ensuite sur Android.  
+              </p>
+              <p class="mb-2">
+               Sur Android, justement, il n’est pas possible pour l’instant de protéger ses fichiers via le capteur d’empreintes digitales ou la caméra frontale du smartphone. En fait, il est même étonnant que Google ne propose pas la moindre option de sécurité permettant de mettre en place un mot de passe sur son application. Le déploiement de cette nouvelle fonctionnalité de sécurité laisse entrevoir son arrivée dans les prochains mois.
+              </p>
+                <hr>
+              <p>Source: <a href="https://www.theverge.com/2020/5/4/21246465/google-drive-privacy-screen-face-touch-id-apple-now-available">The Verge</a></p>
+            </div>
+            <div class="col-md-3 mb-4">
+                <h4 class="font-weight-bold"><strong>D'AUTRES ARTICLES</strong></h4>
+                <hr class="title-hr mb-2">
+
+                <!--Carousel Wrapper-->
+                <div id="carousel" class="carousel slide carousel-fade" data-ride="carousel">
+                    <!--Indicators-->
+                    <ol class="carousel-indicators">
+                        <li data-target="#carousel" data-slide-to="0" class="active"></li>
+                        <li data-target="#carousel" data-slide-to="1"></li>
+                    </ol>
+                    <!--/.Indicators-->
+                    <!--Slides-->
+                    <div class="carousel-inner" role="listbox">
+                        <div class="carousel-item active">
+                            <a href="https://salma-mindy.github.io/actualit-0/">
+                                <div class="view">
+                                    <img class="d-block w-100" src="https://snyk.io/wp-content/uploads/JavaScript-Report-Feature-.png" alt="First slide">
+                                    <div class="mask rgba-black-light"></div>
+                                </div>
+                                <div class="carousel-caption">
+                                    <h5 class="h3-responsive font-weight-bold">State of Javascript frameworks</h5>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="carousel-item">
+                            <!--Mask color-->
+                            <a href="https://salma-mindy.github.io/actuality-1/">
+                                <div class="view">
+                                    <img class="d-block w-100" src="https://cdn.i.haymarketmedia.asia/?n=campaign-asia%2Fcontent%2Fshutterstock_535255936.jpg&h=570&w=855&q=100&v=20170226&c=1" alt="Second slide">
+                                    <div class="mask rgba-black-light"></div>
+                                </div>
+                                <div class="carousel-caption">
+                                    <h5 class="h3-responsive font-weight-bold">Alibaba Cloud</h5>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <!--/.Slides-->
+
+                    <!--Controls-->
+                    <a class="carousel-control-prev" href="#carousel" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#carousel" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                    <!--/.Controls-->
+                </div>
+                <!--/.Carousel Wrapper-->
+
+                <h4 class="font-weight-bold mt-4"><strong>AUTEUR</strong></h4>
+                <hr class="red title-hr mb-2">
+                <div class="card">
+                    <img src="https://media-exp1.licdn.com/dms/image/C5603AQEdHvhwankOnQ/profile-displayphoto-shrink_100_100/0?e=1593043200&v=beta&t=f7VLwOg26e_O4D5XnM2Q0AOxmt40Me4jV6xXEgm0jqo" alt="John" style="width:100%">
+                    <h3 class="mt-2">Sheila Melissa</h3>
+                    <div style="margin: 24px 0;">
+                        <a href="https://www.linkedin.com/in/anoa-sheila-melissa-aka-96a859162"><i class="fa fa-linkedin"></i></a>
+                        <a href="https://www.facebook.com/profile.php?id=100007165728234"><i class="fa fa-facebook"></i></a>
+                    </div>
+                    <p><button>contacter</button></p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer id="sticky-footer" class="py-4 text-white-50" style="background: #004185">
+        <div class="container text-center">
+            <small style="cursor: pointer;color: antiquewhite;">Copyright &copy; <span style="font-weight: 900;">Sheila Melissa</span></small>
+        </div>
+    </footer>
+
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+</body>
+</body>
+
+</html>
